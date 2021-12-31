@@ -1,0 +1,170 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: url("Assets/Background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+}
+
+main {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.container {
+  width: 55%;
+  position: absolute;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+
+  z-index: 1;
+}
+/******BOX1*******/
+.box1 {
+  width: 50%;
+  background: black;
+  text-align: center;
+  color: #fff;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+h1 {
+  padding-top: 30px;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #ffffe6;
+}
+p {
+  color: #b3b3cc;
+  font-size: 2rem;
+}
+.iphone-img {
+  margin-top: -10rem;
+  width: 100%;
+  height: auto;
+}
+/*****BOX2******/
+.box2 {
+  width: 50%;
+  background-color: #fff;
+  padding: 30px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+h2 {
+  margin-bottom: 3rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+label {
+  font-size: 1.6rem;
+}
+.input-fields {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+.checkbox-field {
+  margin-right: 20%;
+  align-items: baseline;
+}
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+span {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.btn {
+  background-color: #000;
+  border: none;
+  border-radius: 5px;
+  width: 90%;
+  padding: 15px;
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+.btn:hover {
+  box-shadow: 3px 3px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+/**********************/
+/*Below 944px (Tablets*/
+/***********************/
+
+@media(max-width:59em ){
+  html {
+    /*8px /16 = 0.5*/
+    font-size: 70%;
+  }
+  body{
+    /*background: inherit;*/
+    background: url("Assets/Background.png");
+  }
+  .container {
+    width: 50%;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .box1,
+  .box2 {
+    width: 100%;
+  }
+  .box1 {
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+  }
+  .box2 {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 10px;
+  }
+  }
+
+@media only Screen and (max-width: 40em) {
+  html {
+    font-size: 70%;
+  }
+  body {
+    background: none;
+    overflow: auto;
+  }
+  .container {
+    width: 100%;
+    margin-top: 0;
+  }
+  .box1,
+  .box2 {
+    width: 100%;
+  }
+  .box1 {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+  .box2 {
+    border:  1px solid grey;
+    padding-left: 15%;
+  }
+ }
+
+
+
+
+
+
+
+
